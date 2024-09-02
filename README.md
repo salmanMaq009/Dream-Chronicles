@@ -27,10 +27,10 @@ Dream Chronicles is an AI-powered app developed during the "Aspire Pakistan Inno
 ### Steps
 
 1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/salmanMaq009/Dream-Chronicles.git
-   cd dreamchronicles
-   ```
+```bash
+git clone https://github.com/salmanMaq009/Dream-Chronicles.git
+cd dreamchronicles
+```
 
 2. **Create a Virtual Environment:**
 ```bash
