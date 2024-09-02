@@ -59,6 +59,9 @@ def main():
     .stApp {
         background-color: #f0f8ff; /* Consistent Alice blue for the main app container */
     }
+    .stSidebar .stText {
+        color: #ffffff; /* White text color in the sidebar for the "About This App" section */
+    }
     .stTextInput textarea {
         background-color: #ffffff; /* White background for the text area */
         border: 2px solid #1e90ff; /* Dodger blue border for high visibility */
@@ -85,13 +88,13 @@ def main():
     .stAudio {
         text-align: right; /* Align audio player to the right */
     }
-    /* Updated style for output text */
+    /* Specific style for output text */
     .stMarkdown p, .stMarkdown span {
-        color: #000000; /* Change output text color to black for better contrast */
-        font-weight: bold; /* Make the output text bold for added emphasis */
+        color: #000000 !important; /* Ensure all output text is black */
     }
     </style>
     """, unsafe_allow_html=True)
+
 
     # Sidebar with app description
     st.sidebar.header("About This App")
