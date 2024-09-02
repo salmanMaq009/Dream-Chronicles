@@ -51,42 +51,47 @@ def text_to_speech(text):
 def main():
     # Custom CSS for background and styling
     st.markdown("""
-        <style>
-        body {
-            background-color: #f0f8ff; /* Alice blue background for a soft look */
-            color: #333333; /* Dark grey text for readability */
-        }
-        .stApp {
-            background-color: #f0f8ff; /* Consistent Alice blue for the main app container */
-        }
-        .stTextInput textarea {
-            background-color: #ffffff; /* White background for the text area */
-            border: 2px solid #1e90ff; /* Dodger blue border for high visibility */
-            color: #1e90ff; /* Dodger blue text color inside the text area */
-            box-shadow: 0 0 10px rgba(30, 144, 255, 0.5); /* Glowing blue shadow to enhance visibility */
-        }
-        .stTextInput textarea:focus {
-            border: 2px solid #4169e1; /* Royal blue border when focused */
-            box-shadow: 0 0 15px rgba(65, 105, 225, 0.8); /* Stronger blue shadow when focused */
-        }
-        .stButton>button {
-            background-color: #1e90ff; /* Dodger blue button background color */
-            color: white; /* Button text color */
-            border-radius: 12px; /* Rounded corners for buttons */
-            padding: 10px 20px; /* Add some padding to the buttons */
-            font-size: 16px; /* Increase font size */
-        }
-        .stButton>button:hover {
-            background-color: #4169e1; /* Royal blue button background color on hover */
-        }
-        h1, h2, h3 {
-            color: #1e90ff; /* Dodger blue color for headers */
-        }
-        .stAudio {
-            text-align: right; /* Align audio player to the right */
-        }
-        </style>
-        """, unsafe_allow_html=True)
+    <style>
+    body {
+        background-color: #f0f8ff; /* Alice blue background for a soft look */
+        color: #333333; /* Dark grey text for readability */
+    }
+    .stApp {
+        background-color: #f0f8ff; /* Consistent Alice blue for the main app container */
+    }
+    .stTextInput textarea {
+        background-color: #ffffff; /* White background for the text area */
+        border: 2px solid #1e90ff; /* Dodger blue border for high visibility */
+        color: #1e90ff; /* Dodger blue text color inside the text area */
+        box-shadow: 0 0 10px rgba(30, 144, 255, 0.5); /* Glowing blue shadow to enhance visibility */
+    }
+    .stTextInput textarea:focus {
+        border: 2px solid #4169e1; /* Royal blue border when focused */
+        box-shadow: 0 0 15px rgba(65, 105, 225, 0.8); /* Stronger blue shadow when focused */
+    }
+    .stButton>button {
+        background-color: #1e90ff; /* Dodger blue button background color */
+        color: white; /* Button text color */
+        border-radius: 12px; /* Rounded corners for buttons */
+        padding: 10px 20px; /* Add some padding to the buttons */
+        font-size: 16px; /* Increase font size */
+    }
+    .stButton>button:hover {
+        background-color: #4169e1; /* Royal blue button background color on hover */
+    }
+    h1, h2, h3 {
+        color: #1e90ff; /* Dodger blue color for headers */
+    }
+    .stAudio {
+        text-align: right; /* Align audio player to the right */
+    }
+    /* Updated style for output text */
+    .stMarkdown p, .stMarkdown span {
+        color: #000000; /* Change output text color to black for better contrast */
+        font-weight: bold; /* Make the output text bold for added emphasis */
+    }
+    </style>
+    """, unsafe_allow_html=True)
 
     # Sidebar with app description
     st.sidebar.header("About This App")
