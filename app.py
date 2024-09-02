@@ -90,9 +90,12 @@ def main():
         color: white !important; /* Make the text in the About section white */
     }
     /* Output text styling */
-    .output-text p {
+    .output-text {
         color: black !important; /* Black color for output text */
         font-weight: bold !important; /* Bold the output text */
+        background-color: #f0f8ff; /* Ensure background contrast */
+        padding: 10px; /* Add some padding */
+        border-radius: 8px; /* Rounded corners */
     }
     </style>
     """, unsafe_allow_html=True)
